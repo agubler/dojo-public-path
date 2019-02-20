@@ -1,0 +1,21 @@
+{
+  "name": "change-paths-4.0.0",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "dojo build && shx cp -r output/dist output/temp-dist && shx mkdir output/dist/src/upload && shx cp -r output/temp-dist/** output/dist/src/upload && shx rm -rf output/temp-dist"
+  },
+  "dependencies": {
+    "@dojo/framework": "^4.0.0",
+    "@dojo/themes": "^4.0.0",
+    "@dojo/widgets": "^4.0.0",
+    "tslib": "~1.8.1"
+  },
+  "devDependencies": {
+    "@dojo/cli-build-app": "^4.0.0",
+    "@dojo/cli-test-intern": "^4.0.0",
+    "@types/node": "~9.6.5",
+    "cpx": "^1.5.0",
+    "shx": "^0.3.2",
+    "typescript": "~2.6.1"
+  }
+}
